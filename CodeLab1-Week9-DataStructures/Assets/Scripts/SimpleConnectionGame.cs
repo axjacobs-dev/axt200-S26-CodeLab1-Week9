@@ -7,7 +7,8 @@ public class SimpleConnectionGame : MonoBehaviour
 {
     public int width = 7;
     public int height = 6;
-    
+    //comma inside the brackets makes it a 2D array
+    //2D array is a grid of boxes, not just a row
     private int[,] grid; // 0 be an empty space, 1 be blue, and 2 be red
 
     public Text display;
@@ -23,7 +24,7 @@ public class SimpleConnectionGame : MonoBehaviour
         // Instantiate and initialize the grid.
         
         grid = new int[width, height];
-
+        //need 2 four loops, one for x and one for y
         for (var x = 0; x < width; x++)
         {
             for (var y = 0; y < height; y++)
@@ -166,20 +167,21 @@ public class SimpleConnectionGame : MonoBehaviour
         {
             for (var y = 0; y < height; y++)
             {
+//checking vertical rows               
                 if (y <= height - 4)
                     if (grid[x,y] != 0 &&
                         grid[x, y] == grid[x, y + 1] &&
                         grid[x, y] == grid[x, y + 2] &&
                         grid[x, y] == grid[x, y + 3])
                         return grid[x, y];
-             
+ //checking horizontal rows            
                 if (x <= width - 4)               
                     if (grid[x,y] != 0 && 
                         grid[x, y] == grid[x + 1, y] && 
                         grid[x, y] == grid[x + 2, y] && 
                         grid[x, y] == grid[x + 3, y])
                         return grid[x, y];
-
+//these last two are checking for diagonals
                 if (x <= width - 4 && y <= height - 4)
                     if (grid[x,y] != 0 && 
                         grid[x, y] == grid[x + 1, y + 1] && 
