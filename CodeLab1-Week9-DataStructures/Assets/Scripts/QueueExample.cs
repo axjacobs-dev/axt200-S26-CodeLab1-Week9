@@ -31,6 +31,7 @@ public class QueueExample : MonoBehaviour
         timer += Time.deltaTime;
 
         // If you press A, S, D, or F, push that move into the queue.
+        //the queue will preserve the top-down order in which these keys are pressed
         if (Input.GetKeyDown(KeyCode.A))
         {
             fishQueue.Enqueue("Angel Fish");

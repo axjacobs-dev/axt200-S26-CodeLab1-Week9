@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class StackExample : MonoBehaviour
 {
+    //effects is an instance of the stack thing
     private Stack<string> effects = new Stack<string>();
 
     public Text display;
@@ -34,6 +35,7 @@ public class StackExample : MonoBehaviour
         // If you press A, S, D, or F, push that move into the stack.
         if (Input.GetKeyDown(KeyCode.A))
         {
+            //can only place things at the top (last in first out)
             effects.Push("Card: Ace");
         }
         if (Input.GetKeyDown(KeyCode.K))

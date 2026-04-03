@@ -1,4 +1,5 @@
 ﻿using System;
+//unity stores lists in collections
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class ListExample : MonoBehaviour
     public TextAsset textFileWithNames;
     public Text display;
 
+    //declare the list
     private List<string> namesList;
 
     private void Start()
