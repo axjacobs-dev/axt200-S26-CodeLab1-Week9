@@ -16,6 +16,7 @@ public class DictionaryExample : MonoBehaviour
     }
 
     // A dictionary to represent what resources they have.
+    //first variable is the key (string), the second is the value (int)
     private Dictionary<string, int> resourcesOwned = new Dictionary<string, int>();
     // A dictionary to represent what items they have.
     private Dictionary<string, int> itemsOwned = new Dictionary<string, int>();
