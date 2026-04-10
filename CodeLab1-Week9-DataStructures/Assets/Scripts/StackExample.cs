@@ -22,8 +22,7 @@ public class StackExample : MonoBehaviour
         audioSource = gameObject.GetComponent<AudioSource>();
         audioSource.volume = 1f;
         Debug.Log("Audio source: " + audioSource);
-        Debug.Log("Clip: " + audioSource.clip);
-        Debug.Log("Number of AudioSources found: " + gameObject.GetComponents<AudioSource>().Length);
+        Debug.Log("Audio clip: " + audioSource.clip);
 
     }
 
@@ -42,32 +41,32 @@ public class StackExample : MonoBehaviour
         timer += Time.deltaTime;
 
         // If you press an alphabetical key, pushes that move into the stack.
-        if (Input.GetKeyDown(KeyCode.A)) effects.Push("autumn");
-        if (Input.GetKeyDown(KeyCode.B)) effects.Push("breath");
-        if (Input.GetKeyDown(KeyCode.C)) effects.Push("cold");
-        if (Input.GetKeyDown(KeyCode.D)) effects.Push("dusk");
-        if (Input.GetKeyDown(KeyCode.E)) effects.Push("echo");
-        if (Input.GetKeyDown(KeyCode.F)) effects.Push("fading");
-        if (Input.GetKeyDown(KeyCode.G)) effects.Push("gentle");
-        if (Input.GetKeyDown(KeyCode.H)) effects.Push("hollow");
-        if (Input.GetKeyDown(KeyCode.I)) effects.Push("infinite");
-        if (Input.GetKeyDown(KeyCode.J)) effects.Push("journey");
-        if (Input.GetKeyDown(KeyCode.K)) effects.Push("kind");
+        if (Input.GetKeyDown(KeyCode.A)) effects.Push("--");
+        if (Input.GetKeyDown(KeyCode.B)) effects.Push("/");
+        if (Input.GetKeyDown(KeyCode.C)) effects.Push("...");
+        if (Input.GetKeyDown(KeyCode.D)) effects.Push("waste-");
+        if (Input.GetKeyDown(KeyCode.E)) effects.Push("ok");
+        if (Input.GetKeyDown(KeyCode.F)) effects.Push("''''");
+        if (Input.GetKeyDown(KeyCode.G)) effects.Push("vvv");
+        if (Input.GetKeyDown(KeyCode.H)) effects.Push("==");
+        if (Input.GetKeyDown(KeyCode.I)) effects.Push("fin");
+        if (Input.GetKeyDown(KeyCode.J)) effects.Push("we were");
+        if (Input.GetKeyDown(KeyCode.K)) effects.Push("-kin-");
         if (Input.GetKeyDown(KeyCode.L)) effects.Push("light");
-        if (Input.GetKeyDown(KeyCode.M)) effects.Push("moonlit");
-        if (Input.GetKeyDown(KeyCode.N)) effects.Push("night");
-        if (Input.GetKeyDown(KeyCode.O)) effects.Push("ocean");
-        if (Input.GetKeyDown(KeyCode.P)) effects.Push("pale");
-        if (Input.GetKeyDown(KeyCode.Q)) effects.Push("quiet");
-        if (Input.GetKeyDown(KeyCode.R)) effects.Push("rain");
-        if (Input.GetKeyDown(KeyCode.S)) effects.Push("silence");
+        if (Input.GetKeyDown(KeyCode.M)) effects.Push("mmmhmmm");
+        if (Input.GetKeyDown(KeyCode.N)) effects.Push("edge");
+        if (Input.GetKeyDown(KeyCode.O)) effects.Push("there");
+        if (Input.GetKeyDown(KeyCode.P)) effects.Push("x");
+        if (Input.GetKeyDown(KeyCode.Q)) effects.Push("*");
+        if (Input.GetKeyDown(KeyCode.R)) effects.Push("---");
+        if (Input.GetKeyDown(KeyCode.S)) effects.Push("shhh");
         if (Input.GetKeyDown(KeyCode.T)) effects.Push("twilight");
-        if (Input.GetKeyDown(KeyCode.U)) effects.Push("undone");
-        if (Input.GetKeyDown(KeyCode.V)) effects.Push("void");
-        if (Input.GetKeyDown(KeyCode.W)) effects.Push("wandering");
-        if (Input.GetKeyDown(KeyCode.X)) effects.Push("exile");
-        if (Input.GetKeyDown(KeyCode.Y)) effects.Push("yearning");
-        if (Input.GetKeyDown(KeyCode.Z)) effects.Push("zenith");
+        if (Input.GetKeyDown(KeyCode.U)) effects.Push("a void");
+        if (Input.GetKeyDown(KeyCode.V)) effects.Push("return");
+        if (Input.GetKeyDown(KeyCode.W)) effects.Push("love,");
+        if (Input.GetKeyDown(KeyCode.X)) effects.Push("here");
+        if (Input.GetKeyDown(KeyCode.Y)) effects.Push("crave");
+        if (Input.GetKeyDown(KeyCode.Z)) effects.Push("<<>>");
 
         // If the time is up, say that time is up and show the effects.
         if (timer >= timePerTurn)
