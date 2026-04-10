@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 //unity stores lists in collections
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +43,8 @@ public class ListExample : MonoBehaviour
 
         var indexOfLastLanni = 0;
 
+        //this finds the last index of Lanni just a different way of doing it 
+        //it should be 4520
         for (int i = 0; i < namesList.Count; i++)
         {
             if (namesList[i].Equals("LANNI"))

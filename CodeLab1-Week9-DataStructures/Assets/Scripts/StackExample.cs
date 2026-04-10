@@ -46,7 +46,7 @@ public class StackExample : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C)) effects.Push("...");
         if (Input.GetKeyDown(KeyCode.D)) effects.Push("waste-");
         if (Input.GetKeyDown(KeyCode.E)) effects.Push("ok");
-        if (Input.GetKeyDown(KeyCode.F)) effects.Push("''''");
+        if (Input.GetKeyDown(KeyCode.F)) effects.Push("))((");
         if (Input.GetKeyDown(KeyCode.G)) effects.Push("vvv");
         if (Input.GetKeyDown(KeyCode.H)) effects.Push("==");
         if (Input.GetKeyDown(KeyCode.I)) effects.Push("fin");
